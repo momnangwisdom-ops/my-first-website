@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf6f5;
+    color: #3d2630;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    color: #6f293f;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background-color: #faf6f5;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6f293f;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #3d2630;
+}
+
+nav a:hover {
+    color: #a85d76;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #6f293f;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 7px;
+}
+
+.button:hover {
+    background-color: #4e1b2c;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 6%;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 500px;
+    margin: 0 auto 25px;
+    color: #75666c;
+}
+
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 40px;
+    border: 8px solid white;
+    border-radius: 15px;
+}
+
+.benefits {
+    padding: 60px 6%;
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.benefit-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.benefit-container div {
+    flex: 1;
+}
+
+.benefit-container h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.benefit-container p {
+    color: #75666c;
+    font-size: 14px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 6%;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #75666c;
+    margin-bottom: 15px;
+}
+
+.about img {
+    width: 45%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.recipes {
+    background-color: #f2e7eb;
+    padding: 70px 6%;
+}
+
+.recipes h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #75666c;
+    margin-bottom: 30px;
+}
+
+.search {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.search input {
+    padding: 12px;
+    width: 280px;
+    border: 1px solid #e2cbd3;
+    border-radius: 7px;
+    outline: none;
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.recipe-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.recipe-card h3 {
+    font-size: 17px;
+    margin: 12px 0;
+    color: #3d2630;
+}
+
+.recipe-card p {
+    font-size: 13px;
+    color: #75666c;
+    margin-bottom: 12px;
+}
+
+.recipe-card small {
+    display: block;
+    color: #6f293f;
+    margin-bottom: 15px;
+}
+.recipe-button {
+    display: block;
+    text-align: center;
+    background-color: #6f293f;
+    color: white;
+    padding: 12px;
+    border-radius: 25px;
+}
+
+.recipe-button:hover {
+    background-color: #4e1b2c;
+}
+
+.cta {
+    text-align: center;
+    background-color: #f2dfe5;
+    margin: 70px 6%;
+    padding: 60px 20px;
+    border-radius: 15px;
+}
+
+.cta h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #75666c;
+    margin-bottom: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 6%;
+    border-top: 1px solid #eadfe3;
+    color: #75666c;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero img {
+        height: 220px;
+    }
+
+    .benefit-container {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .recipe-container {
+        grid-template-columns: 1fr;
+    }
+
+    .search {
+        text-align: center;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        justify-content: center;
+    }
+
+}
